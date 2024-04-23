@@ -1,0 +1,25 @@
+.greet-user{
+    text-align: center;
+    background-color: black;
+    padding: 12px 0;
+    color: #fff;
+    font-weight: 600;
+}
+  .view-messages {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height:60vh ;
+  }
+  .view-messages a {
+    text-decoration: none;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+  .readmsg{
+    text-align: center;
+   position: relative;
+   top: 170px;
+  }
