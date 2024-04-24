@@ -19,7 +19,7 @@ function AllMessages() {
   });
 
   return (
-    <div>
+    <div className=' header-wrapper'>
       <h1 className="all-messages">Messages</h1>
       <div className="item-block" style={{ cursor: 'pointer' }}>
         {isFetching ? (

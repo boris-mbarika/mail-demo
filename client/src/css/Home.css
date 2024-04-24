@@ -1,15 +1,15 @@
 .greet-user{
     text-align: center;
-    background-color: black;
-    padding: 12px 0;
-    color: #fff;
+    background-color: #ffffff;
+    padding: 18px 0;
+    color: #000;
     font-weight: 600;
 }
   .view-messages {
     display: flex;
     justify-content: center;
     align-items:center ;
-    height:60vh ;
+    height:80vh ;
   }
   .view-messages a {
     text-decoration: none;
@@ -23,3 +23,5 @@
    position: relative;
    top: 170px;
   }
+ 
+  

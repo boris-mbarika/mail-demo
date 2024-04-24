@@ -33,5 +33,11 @@ a{
   .content p{
 padding:10px 30px;
   }
- 
+  .mesaages{
+    background-color: black;
+    height: 100vh;
+  }
+ .mesaages h1{
+  color: #fff;
+ }
   
