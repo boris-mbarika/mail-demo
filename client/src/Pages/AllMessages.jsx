@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useQuery } from 'react-query';
 import { getAllMessages } from '../services/api';
 import { user } from '../user';
+import { truncateText } from '../helpers/message';
 
 function AllMessages() {
   const navigate = useNavigate();
@@ -36,7 +37,7 @@ function AllMessages() {
               <h1 style={{ fontWeight: msg.isRead ? 'normal' : 'bold' }}>
                 {msg.subject}
               </h1>
-              <p>{msg.content}</p>
+              <p>{truncateText(msg.content.replace(/\\n/g,''), 30)}</p>
             </div>
           ))
         )}

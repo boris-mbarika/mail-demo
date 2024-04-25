@@ -24,7 +24,9 @@
     width:30% ;
     border-radius: 5px;
     font-weight: 400;
-padding: 20px 0;
+padding: 0.8em 1.25em;
+text-align: left;
+white-space: pre-wrap;
 
 }
 
@@ -34,4 +36,8 @@ padding: 20px 0;
 }
 .content h1{
     font-size:20px ;
+}
+
+pre {
+    white-space: pre-wrap;
 }

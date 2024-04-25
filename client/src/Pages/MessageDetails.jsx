@@ -24,9 +24,7 @@ function MessageDetails() {
     <div className="mesaages">
       <h1>{message.subject}</h1>
       <div className="msg-container">
-        <div className="msg">
-          <p>{message.content}</p>
-        </div>
+        <div className="msg" dangerouslySetInnerHTML={{__html: message.content.replace(/\\n/g, '<br />')}} />
       </div>
     </div>
   );
