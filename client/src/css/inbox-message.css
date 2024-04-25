@@ -1,43 +1,33 @@
-
-.all-messages{
-    position: relative;
-    top: 7rem;
-    text-align: center;
+.all-messages {
+  text-align: center;
+  padding: 50px 0;
 }
-a{
-    font-size:25px ;
-    color: black;
-    font-weight: 500;
-    text-decoration:none ;
 
+a {
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
 }
-.item-block{
-    display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items:center ;
-   margin-top: 150px;
-  }
-  .content{
-    background-color: #f4f4f4;
-    margin-bottom: 20px;
-    width:30% ;
-    border-radius: 5px; 
-  }
-  .content h1{
-    margin-left: 30px;
-  }
-  .content p{
-padding:10px 30px;
-  }
-  .mesaages{
-    background-color: black;
-    height: 100vh;
-  }
- .mesaages h1{
+
+.item-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.mesaages {
+  background-color: black;
+  height: 100vh;
+}
+
+.mesaages h1 {
   color: #fff;
- }
- .item-block p{
-  color: #fff;
- }
-  
+}

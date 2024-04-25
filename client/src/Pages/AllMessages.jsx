@@ -20,24 +20,30 @@ function AllMessages() {
   });
 
   return (
-    <div className=' header-wrapper'>
-      <h1 className="all-messages">Messages</h1>
+    <div className="header-wrapper">
+      <h1 className="all-messages text-light">Messages</h1>
       <div className="item-block" style={{ cursor: 'pointer' }}>
         {isFetching ? (
-          <center ><p style={{color:"white"}}>Loading...</p></center>
+          <center>
+            <p style={{ color: 'white' }}>Loading...</p>
+          </center>
         ) : isError ? (
-          <center ><p style={{color:"white"}}> Something went wrong</p></center>
+          <center>
+            <p style={{ color: 'white' }}> Something went wrong</p>
+          </center>
         ) : (
           messages?.map((msg) => (
             <div
-              className="content"
+              className="content msg-box"
               key={msg._id}
               onClick={() => navigate(`/messages/${msg._id}`)}
             >
               <h1 style={{ fontWeight: msg.isRead ? 'normal' : 'bold' }}>
                 {msg.subject}
               </h1>
-              <p>{truncateText(msg.content.replace(/\\n/g,''), 30)}</p>
+              <p className="text-dark">
+                {truncateText(msg.content.replace(/\\n/g, ''), 50)}
+              </p>
             </div>
           ))
         )}

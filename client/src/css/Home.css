@@ -1,30 +1,32 @@
-.greet-user{
-    text-align: center;
-    background-color: #ffffff;
-    padding: 18px 0;
-    color: #000;
-    font-weight: 600;
+.greet-user {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 18px 0;
+  color: #000;
+  font-weight: 600;
 }
-  .view-messages {
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-    height:80vh ;
-  }
-  .view-messages a {
-    text-decoration: none;
-    background-color: blue;
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 20px;
-  }
-  .readmsg{
-    text-align: center;
-   position: relative;
-   top: 170px;
-  }
-  .readmsg p{
-    color: #fff;
-  }
- 
-  
+
+.view-messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.view-messages a {
+  text-decoration: none;
+  background-color: blue;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.readmsg {
+  text-align: center;
+  position: relative;
+  top: 170px;
+}
+
+.readmsg p {
+  color: #fff;
+}

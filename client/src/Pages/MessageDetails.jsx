@@ -17,14 +17,20 @@ function MessageDetails() {
     staleTime: Infinity,
   });
 
-  if (isFetching) return <center style={{color:"white"}}>Loading...</center>;
-  if (isError) return <center style={{color:"white"}}>Something went wrong</center>;
+  if (isFetching) return <center className="text-light">Loading...</center>;
+  if (isError)
+    return <center className="text-light">Something went wrong</center>;
 
   return (
     <div className="mesaages">
       <h1>{message.subject}</h1>
       <div className="msg-container">
-        <div className="msg" dangerouslySetInnerHTML={{__html: message.content.replace(/\\n/g, '<br />')}} />
+        <div
+          className="msg  msg-box"
+          dangerouslySetInnerHTML={{
+            __html: message.content.replace(/\\n/g, '<br />'),
+          }}
+        />
       </div>
     </div>
   );
