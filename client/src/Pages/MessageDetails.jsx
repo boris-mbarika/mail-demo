@@ -17,8 +17,8 @@ function MessageDetails() {
     staleTime: Infinity,
   });
 
-  if (isFetching) return <center>Loading...</center>;
-  if (isError) return <center>Something went wrong</center>;
+  if (isFetching) return <center style={{color:"white"}}>Loading...</center>;
+  if (isError) return <center style={{color:"white"}}>Something went wrong</center>;
 
   return (
     <div className="mesaages">

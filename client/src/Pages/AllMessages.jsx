@@ -24,9 +24,9 @@ function AllMessages() {
       <h1 className="all-messages">Messages</h1>
       <div className="item-block" style={{ cursor: 'pointer' }}>
         {isFetching ? (
-          <center>Loading...</center>
+          <center ><p style={{color:"white"}}>Loading...</p></center>
         ) : isError ? (
-          <center>Something went wrong</center>
+          <center ><p style={{color:"white"}}> Something went wrong</p></center>
         ) : (
           messages?.map((msg) => (
             <div

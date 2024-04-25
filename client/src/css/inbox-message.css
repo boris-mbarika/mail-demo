@@ -1,7 +1,4 @@
-.top-bar{
-    background-color:black;
-    height: 10vh;
-}
+
 .all-messages{
     position: relative;
     top: 7rem;
@@ -38,6 +35,9 @@ padding:10px 30px;
     height: 100vh;
   }
  .mesaages h1{
+  color: #fff;
+ }
+ .item-block p{
   color: #fff;
  }
   
